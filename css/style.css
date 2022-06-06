@@ -212,13 +212,11 @@ main {
 }
 .sectionThree {
     background-image: url(/images/desktop/image-transform.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .sectionFour {
     background-image: url(/images/desktop/image-stand-out.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -236,14 +234,12 @@ main {
 }
 .sectionSix {
     background-image: url(/images/desktop/image-graphic-design.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
 }
 .sectionSeven {
     background-image: url(/images/desktop/image-photography.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
@@ -262,26 +258,21 @@ main {
     background: #fffbf8;
 }
 .sectionNine {
-    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);    background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .sectionTen {
     background-image: url(/images/desktop/image-gallery-orange.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .sectionEleven {
     background-image: url(/images/desktop/image-gallery-cone.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .sectionTwelve {
     background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
