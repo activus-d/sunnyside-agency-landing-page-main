@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body {
+    font-family:  'Barlow', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+    margin-bottom: 2rem;
+    color: #263240;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    align-self: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/***************************************
+LAYOUT
+***************************************/
+body{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 53rem 20fr 3fr 7rem;
+}
+header {
+    display: grid;
+    grid-template-rows: 7rem 1fr;
+    align-items: start;
+    position: relative;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.menu {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: none
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 38rem;
+}
+.sectionOne {
+    display: grid;
+}
+.sectionOne h1 {
+    justify-self: center;
+}
+.sectionOne img {
+    justify-self: center;
+}
+.sectionOne h2 {
+    
+}
+.arrow {
+    margin: 0 auto
+}
+.sectionTwo {
+    grid-column: 1 / 3;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+.sectionThree {
+    grid-column: 3 / 5;
+}
+.sectionFour {
+    grid-column: 1 / 3;
+}
+.sectionFive {
+    grid-column: 3 / 5;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+.sectionSix {
+    grid-column: 1 / 3;
+    display: grid;
+    place-content: end;
+}
+.sectionSeven {
+    grid-column: 3 / 5;
+    display: grid;
+    place-content: end;
+}
+.sectionEight{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 5fr;
+    grid-column: 1 / 5;
+}
+
+h3 {
+    grid-column: 1 / 5;
+    width: 100%;
+}
+.testimonials {
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto, 20rem);
+    justify-content: space-around;
+}
+.client {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 3fr 2fr;
+}
+.client img {
+    justify-self: center;
+}
+.sectionSix {
+    grid-column: 1 / 3;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(3rem, auto));
+    align-items: center;
+}
+
+
+/********************************************
+ADDITIONAL STYLES FOR HEADER
+********************************************/
+header {
+    background: #3dbeff;
+    color: white;
+    background-color: #3dbeff;
+    background-image: url(/images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+nav {
+    padding: 0 3rem 0 3rem;
+    font-size: 1.4rem;
+}
+ul {
+    justify-self: space-around;
+}
+li {
+    list-style: none;
+    text-align: center;
+    padding-top: 0.2rem;
+    border-radius: 1rem;
+}
+li:hover{
+    background: #84d1f7;
+    cursor: pointer;
+}
+h1 {
+    margin: 3rem 0 0 0;
+    font-size: 4rem;
+    letter-spacing: 0.7rem;
+    color: white;
+}
+
+/********************************************
+ADDITIONAL STYLES FOR MAIN
+********************************************/
+main {
+    font-size: 1.4rem;
+    color: #67686a;
+}
+.sectionOne img {
+    width: 2rem;
+    margin-top: 2rem;
+}
+.impression {
+    width: 12rem;
+    height: 2rem;
+    position: absolute;
+    opacity: 0.5;
+    border-radius: 0.3rem;
+}
+.sectionTwo .impression {
+    bottom: 31.5%;
+    left: 19%;
+    border-bottom: 1rem solid  #fcf2ba;
+}
+.learnMore:hover {
+    cursor: pointer;
+}
+.learnMore span {
+    font-family: 'Fraunces', serif;
+    color: #263240;
+    font-weight: 900;
+}
+.sectionTwo .impression:hover {
+    border-bottom: 1rem solid  #fed201;
+    cursor: pointer;
+}
+.sectionThree {
+    background-image: url(/images/desktop/image-transform.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sectionFour {
+    background-image: url(/images/desktop/image-stand-out.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sectionTwo, .sectionFive {
+    padding: 0 20%;
+}
+.sectionFive .impression {
+    bottom: 31.5%;
+    left: 19%;
+    border-bottom: 1rem solid  #f6d6cf;
+}
+.sectionFive .impression:hover {
+    border-bottom: 1rem solid  #ff7163;
+    cursor: pointer;
+}
+.sectionSix {
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.sectionSeven {
+    background-image: url(/images/desktop/image-photography.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.sectionTwo h2, .sectionFive h2 {
+    margin-bottom: 2rem
+}
+.sectionTwo p, .sectionFive p {
+    margin-bottom: 2rem;
+}
+.sectionSix, .sectionSeven {
+    padding: 0 6rem 3rem 6rem;
+}
+.sectionEight {
+    padding: 4rem 2rem;
+    background: #fffbf8;
+}
+.sectionNine {
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sectionTen {
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sectionEleven {
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sectionTwelve {
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+h3 {
+    text-align: center;
+    color: #a7a8ac;
+    letter-spacing: 0.5rem;
+}
+.testimonials {
+    padding-bottom: 2rem;
+}
+.client{
+    text-align: center;
+    padding-top: 2rem;
+}
+.client img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.clientName {
+    font-family: 'Fraunces', serif;
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 0.6rem;
+    color: #263240;
+    font-weight: 900;
+}
+.clientText {
+    padding: 0 2rem;
+}
+.clientStatus {
+    font-family: 'Barlow', sans-serif;
+    display: block;
+}
+
+/********************************************
+ADDITIONAL STYLES FOR FOOTER
+********************************************/
+footer {
+    background: #90d4c5;
+    color: #2f7666;
+}
+h4 {
+    text-align: center;
+    color: #2f7666;
+    font-size: 3rem;
+}
+.footerOptions, .socials {
+    text-align: center;
+    color: #2f7666;
+    font-size: 1.4rem;
+    align-self: start;
+}
+.footerOptions span, .socials img {
+    margin: 0 2rem;
+}
+.footerOptions span:hover {
+    color: white;
+    cursor: pointer;
+}
+.fa-brands {
+    margin: 0 2rem;
+    align-self: end;
+    font-size: 2rem;
+}
+.fa-brands:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/********************************************
+STYLES FOR SCREENSIZE 600PX
+********************************************/
+@media only screen and ( max-width: 600px ) {
+    header {
+        background-image: url(/images/mobile/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        height: 53rem
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+    }
+    .menu {
+        display: block;
+    }
+    ul {
+        /* height: 20rem; */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        width: 75%;
+        height: 25rem;
+        padding: 2rem;
+        background: white;
+        color: #263240;
+    }
+    li {
+        align-self: center;
+        justify-self: center;
+        width: 10rem;
+        height: 4rem;
+        padding-top: 1rem;
+        border-radius: 2rem;
+    }
+    li:hover {
+        background: #fed201;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    main {
+        /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-rows: repeat(10, 1fr); */
+        grid-auto-rows: minmax(32rem, auto);
+    }
+    .sectionTwo {
+        grid-column: 1 / 5;
+        grid-row: 2;
+    }
+    .sectionThree {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        background-image: url(/images/mobile/image-transform.jpg);
+    }
+    .sectionFour {
+        grid-column: 1 / 5;
+        background-image: url(/images/mobile/image-stand-out.jpg);
+    }
+    .sectionFive {
+        grid-column: 1 / 5;
+    }
+    .sectionSix {
+        grid-column: 1 / 5;
+        background-image: url(/images/mobile/image-graphic-design.jpg);
+    }
+    .sectionSeven {
+        grid-column: 1 / 5;
+        background-image: url(/images/mobile/image-photography.jpg);
+    }
+    .sectionEight {
+        grid-template-rows: 1fr 10fr;
+    }
+    .testimonials {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, minmax(20rem, auto));
+    }
+    .client {
+        grid-column: 1 / 4;
+        grid-template-rows: 1fr;
+        /* grid-auto-rows: minmax(20rem, auto); */
+        margin-bottom: 5rem;
+    }
+    .client img {
+        margin-bottom: 0;
+    }
+    .clientName {
+        margin-top: 1rem;
+    }
+}
+
+

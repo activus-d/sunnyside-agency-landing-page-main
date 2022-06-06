@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
   <header>
@@ -25,18 +26,20 @@
         <li>Projects</li>
         <li>Contact</li>
       </ul>
+      <img src="images/icon-hamburger.svg" alt="menu icon" class="menu">
     </nav>
-  </header>
-  <main>
     <section class="sectionOne">
-      <h1>We are creatives</h1>
+      <h1>WE ARE CREATIVES</h1>
       <img src="images/icon-arrow-down.svg" alt="arrow icon" class="arrow">
     </section>
+  </header>
+  <main>
     <section class="sectionTwo">
       <h2>Transform your brand</h2>
       <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-      <div>
+      <div class="learnMore">
         <span>LEARN MORE</span>
+        <div class="impression"></div>
       </div>
     </section>
     <section class="sectionThree"></section>
@@ -44,8 +47,9 @@
     <section class="sectionFive">
       <h2>Stand out to the right audience</h2>
       <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-      <div>
-        <span>Learn more</span>
+      <div class="learnMore">
+        <span>LEARN MORE</span>
+        <div class="impression"></div>
       </div>
     </section>
     <section class="sectionSix">
@@ -57,28 +61,33 @@
       <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
     </section>
     <section class="sectionEight">
-      <h3>Client testimonials</h3>
+      <h3>CLIENT TESTIMONIALS</h3>
       <div class="testimonials">
-        <div>
-          <img src="#" alt="emily image" class="clientImg">
-          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <span>Emily R.</span>
-          <span>Marketing Director</span>
+        <div class="client">
+          <img src="images/image-emily.jpg" alt="emily image" class="clientImg">
+          <p class="clientText">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div class="clientDetails">
+            <span class="clientName">Emily R.</span>
+            <span class="clientStatus">Marketing Director</span>
+          </div>
         </div>
-        <div>
-          <img src="#" alt="thomasImg" class="clientImg">
-          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-          <span>Thomas S.</span>
-          <span>Chief Operating Officer</span>
+        <div class="client">
+          <img src="images/image-thomas.jpg" alt="thomasImg" class="clientImg">
+          <p class="clientText">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <div class="clientDetails">
+            <span class="clientName">Thomas S.</span>
+            <span class="clientStatus">Chief Operating Officer</span>
+          </div>
         </div>
-        <div>
-          <img src="#" alt="jennieImg" class="clientImg">
-          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-          <span>Jennie F.</span>
-          <span>Business Owner</span>
+        <div class="client">
+          <img src="images/image-jennie.jpg" alt="jennieImg" class="clientImg">
+          <p class="clientText">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="clientDetails">
+            <span class="clientName">Jennie F.</span>
+            <span class="clientStatus">Business Owner</span>
+          </div>
         </div>
       </div>
-      
     </section>
     <section class="sectionNine"></section>
     <section class="sectionTen"></section>
@@ -93,11 +102,16 @@
       <span>Projects</span>
       <span>Contact</span>
     </div>
+    <div class="socials">
+      <i class="fa-brands fa-facebook-square"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-pinterest"></i>
+    </div>
  
   </footer>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://activuscode.hashnode.dev/">D.M. Oladele</a>.
   </div>
 </body>
 </html>
