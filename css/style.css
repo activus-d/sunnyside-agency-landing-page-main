@@ -157,6 +157,9 @@ nav {
     font-size: 1.4rem;
     height: 3rem;
 }
+.mainLogo {
+    padding-top: 0.7rem;
+}
 ul {
     justify-self: space-around;
 }
