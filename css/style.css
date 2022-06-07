@@ -38,6 +38,7 @@ header {
     grid-template-rows: 7rem 1fr;
     align-items: start;
     position: relative;
+    overflow: hidden;
 }
 nav {
     display: grid;
@@ -68,9 +69,6 @@ main {
 .sectionOne img {
     justify-self: center;
 }
-.sectionOne h2 {
-    
-}
 .arrow {
     margin: 0 auto
 }
@@ -78,7 +76,7 @@ main {
     grid-column: 1 / 3;
     display: grid;
     place-content: center;
-    position: relative;
+    /* position: relative; */
 }
 .sectionThree {
     grid-column: 3 / 5;
@@ -90,6 +88,9 @@ main {
     grid-column: 3 / 5;
     display: grid;
     place-content: center;
+    /* position: relative; */
+}
+.learnMore {
     position: relative;
 }
 .sectionSix {
@@ -154,6 +155,7 @@ header {
 nav {
     padding: 0 3rem 0 3rem;
     font-size: 1.4rem;
+    height: 3rem;
 }
 ul {
     justify-self: space-around;
@@ -161,7 +163,7 @@ ul {
 li {
     list-style: none;
     text-align: center;
-    padding-top: 0.2rem;
+    padding-top: 0.5rem;
     border-radius: 1rem;
 }
 li:hover{
@@ -194,8 +196,8 @@ main {
     border-radius: 0.3rem;
 }
 .sectionTwo .impression {
-    bottom: 31.5%;
-    left: 19%;
+    bottom: 0%;
+    left: -3%;
     border-bottom: 1rem solid  #fcf2ba;
 }
 .learnMore:hover {
@@ -224,8 +226,8 @@ main {
     padding: 0 20%;
 }
 .sectionFive .impression {
-    bottom: 31.5%;
-    left: 19%;
+    bottom: 0%;
+    left: -3%;
     border-bottom: 1rem solid  #f6d6cf;
 }
 .sectionFive .impression:hover {
@@ -349,82 +351,75 @@ h4 {
 STYLES FOR SCREENSIZE 600PX
 ********************************************/
 @media only screen and ( max-width: 600px ) {
+    body {
+        grid-template-rows: 52rem 24fr 3fr 7rem;
+    }
+    /**************************************
+    STYLES FOR LAYOUT
+    **************************************/
     header {
-        background-image: url(../images/mobile/image-header.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 100%;
         height: 53rem
     }
     nav {
         display: grid;
+        height: 0rem;
         grid-template-columns: 1fr 1fr;
         align-self: center;
     }
     .menu {
         display: block;
+        cursor: pointer;
     }
     ul {
-        /* height: 20rem; */
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         position: absolute;
         top: 15%;
         right: 5%;
-        width: 75%;
-        height: 25rem;
-        padding: 2rem;
-        background: white;
-        color: #263240;
+        width: 90%;
+        height: 0rem;
     }
     li {
         align-self: center;
         justify-self: center;
         width: 10rem;
         height: 4rem;
-        padding-top: 1rem;
-        border-radius: 2rem;
-    }
-    li:hover {
-        background: #fed201;
-    }
-    h1 {
-        font-size: 2rem;
     }
     main {
-        /* grid-template-columns: 1fr 1fr; */
-        /* grid-template-rows: repeat(10, 1fr); */
-        grid-auto-rows: minmax(auto, 30rem);
+        grid-template-rows: repeat(9, 1fr);
+        grid-auto-rows: minmax(18rem, auto);
     }
     .sectionTwo {
         grid-column: 1 / 5;
         grid-row: 2;
     }
+    .sectionTwo .impression {
+        left: 32%;
+    }
     .sectionThree {
         grid-column: 1 / 5;
         grid-row: 1;
-        background-image: url(../images/mobile/image-transform.jpg);
     }
     .sectionFour {
         grid-column: 1 / 5;
-        background-image: url(../images/mobile/image-stand-out.jpg);
     }
     .sectionFive {
         grid-column: 1 / 5;
     }
+    .sectionFive .impression {
+        left: 32%;
+    }
     .sectionSix {
         grid-column: 1 / 5;
-        background-image: url(../images/mobile/image-graphic-design.jpg);
         grid-row: 5 / 7;
     }
     .sectionSeven {
         grid-column: 1 / 5;
-        background-image: url(../images/mobile/image-photography.jpg);
         grid-row: 7 / 9;
     }
     .sectionEight {
-        grid-template-rows: 1fr 10fr;
-        grid-row: 9 / 12;
+        grid-template-rows: 1fr 9fr;
+        grid-row: 9 / 13;
     }
     .testimonials {
         grid-template-columns: 1fr;
@@ -432,36 +427,101 @@ STYLES FOR SCREENSIZE 600PX
     }
     .client {
         grid-column: 1 / 4;
-        grid-template-rows: 2fr 1fr 2fr;
-        /* grid-auto-rows: minmax(20rem, auto); */
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .sectionNine {
+        grid-column: 1 / 3;
+        grid-template-rows: 1 / 2;
+    }
+    .sectionTen {
+        grid-column: 3 / 5;
+    }
+    .sectionEleven {
+        grid-column: 1 / 3;
+    }
+    .sectionTwelve {
+        grid-column: 3 / 5;
+    }
+    footer {
+        height: 38rem;
+    }
+
+
+    /**************************************
+    ADDITIONAL STYLES FOR HEADER
+    **************************************/
+    header {
+        background-image: url(../images/mobile/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+    }
+    ul {
+        padding: 0rem;
+        background: white;
+        color: #263240;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    li {
+        padding: 1rem;
+        border-radius: 2rem;
+        transition: 0.3s;
+    }
+    li:hover {
+        background: #fed201;
+    }
+    h1 {
+        text-align: center;
+    }
+
+
+    /**************************************
+    ADDITIONAL STYLES FOR MAIN
+    **************************************/
+    .sectionThree {
+        background-image: url(../images/mobile/image-transform.jpg);
+    }
+    .sectionTwo {
+        text-align: center;
+    }
+    .sectionFour {
+        background-image: url(../images/mobile/image-stand-out.jpg);
+    }
+    .sectionFive {
+        text-align: center;
+    }
+    .sectionSix {
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+    }
+    .sectionSeven {
+        background-image: url(../images/mobile/image-photography.jpg);
+    }
+    .client {
         margin-bottom: 2rem;
     }
     .client img {
         margin-bottom: 0;
     }
     .clientName {
-        margin-top: 1rem;
+        margin: 0;
     }
     .sectionNine {
         background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
-        grid-column: 1 / 3;
-        grid-template-rows: 1 / 2;
     }
     .sectionTen {
         background-image: url(../images/mobile/image-gallery-orange.jpg);
-        grid-column: 3 / 5;
     }
     .sectionEleven {
         background-image: url(../images/mobile/image-gallery-cone.jpg);
-        grid-column: 1 / 3;
     }
     .sectionTwelve {
         background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
-        grid-column: 3 / 5;
     }
-    footer {
-        height: 38rem;
-    }
+
+    /**************************************
+    ADDITIONAL STYLES FOR FOOTER
+    **************************************/
 }
 
 
