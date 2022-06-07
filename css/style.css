@@ -189,7 +189,7 @@ main {
     margin-top: 2rem;
 }
 .impression {
-    width: 12rem;
+    width: 14rem;
     height: 2rem;
     position: absolute;
     opacity: 0.5;
@@ -394,7 +394,7 @@ STYLES FOR SCREENSIZE 600PX
         grid-row: 2;
     }
     .sectionTwo .impression {
-        left: 32%;
+        left: 27%;
     }
     .sectionThree {
         grid-column: 1 / 5;
@@ -407,7 +407,7 @@ STYLES FOR SCREENSIZE 600PX
         grid-column: 1 / 5;
     }
     .sectionFive .impression {
-        left: 32%;
+        left: 27%;
     }
     .sectionSix {
         grid-column: 1 / 5;
