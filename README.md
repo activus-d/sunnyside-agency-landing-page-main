@@ -22,7 +22,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-![](./images/screencapture.png)
+![](./images/screencapture2.png)
 
 ### Links
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
