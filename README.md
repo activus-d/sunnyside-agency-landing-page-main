@@ -25,8 +25,8 @@ Users should be able to:
 ![](./images/screencapture2.png)
 
 ### Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/activus-d/sunnyside-agency-landing-page-main](https://github.com/activus-d/sunnyside-agency-landing-page-main)
+- Live Site URL: [https://activus-d.github.io/sunnyside-agency-landing-page-main/](https://activus-d.github.io/sunnyside-agency-landing-page-main/)
 
 ## My process
 
