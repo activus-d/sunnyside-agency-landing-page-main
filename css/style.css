@@ -372,7 +372,9 @@ STYLES FOR SCREENSIZE 600PX
     .menu {
         display: block;
         cursor: pointer;
-        top: 8%;
+        top: 8.5%;
+        height: 1.5rem;
+
     }
     ul {
         grid-template-columns: 1fr;
